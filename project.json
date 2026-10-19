@@ -1,0 +1,50 @@
+{
+  "slug": "stockroom",
+  "title": "Stockroom",
+  "tagline": "Small store. Clear stock.",
+  "noun": "product",
+  "port": 8003,
+  "color": "#ffcb91",
+  "fields": [
+    {
+      "name": "name",
+      "label": "Product name",
+      "type": "text",
+      "max": 120
+    },
+    {
+      "name": "sku",
+      "label": "SKU",
+      "type": "text",
+      "max": 40
+    },
+    {
+      "name": "category",
+      "label": "Category",
+      "type": "select",
+      "options": [
+        "Electronics",
+        "Clothing",
+        "Books",
+        "Food",
+        "Other"
+      ]
+    },
+    {
+      "name": "quantity",
+      "label": "Quantity",
+      "type": "integer"
+    },
+    {
+      "name": "price",
+      "label": "Unit price (NGN)",
+      "type": "money"
+    },
+    {
+      "name": "reorder_level",
+      "label": "Reorder level",
+      "type": "integer"
+    }
+  ],
+  "features": "Manage products with unique SKUs, update stock quantities and prices, find low-stock items and calculate total inventory value."
+}
